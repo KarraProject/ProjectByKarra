@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip"
+    >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="65dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="5dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/flower" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="66dp"
+        android:layout_marginRight="10dip"
+        android:layout_weight="0.32"
+        android:minHeight="50dip"
+        android:orientation="horizontal"
+        android:paddingBottom="1dip"
+        android:paddingTop="1dip" >
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/notestxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/date"
+            android:layout_alignParentBottom="true"
+            android:text="Large Text"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

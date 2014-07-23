@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@drawable/notelist" >
+
+    <EditText
+        android:id="@+id/createsubjecttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/createsubject"
+        android:layout_alignBottom="@+id/createsubject"
+        android:layout_alignLeft="@+id/startcamera"
+        android:layout_alignRight="@+id/createtime"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:maxLength="25"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp" />
+
+    <requestFocus />
+
+    <TextView
+        android:id="@+id/subcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/createsubjecttxt"
+        android:layout_below="@+id/createsubjecttxt"
+        android:layout_marginTop="4dp"
+        android:text="25"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/createtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/createsubject"
+        android:layout_alignParentRight="true"
+        android:text="TextView"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/createsubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/createdate"
+        android:layout_toLeftOf="@+id/createsubjecttxt"
+        android:text="Title : "
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/startcamera" >
+
+        <EditText
+            android:id="@+id/createnotes"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="Enter Notes Here .. !!"
+            android:inputType="textMultiLine"
+            android:maxLength="200"
+            android:paddingLeft="45dp"
+            android:paddingRight="45dp"
+            android:paddingTop="45dp"
+            android:textSize="20sp" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/startcamera"
+        android:layout_width="155dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/createsubjecttxt"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/flower" />
+
+    <TextView
+        android:id="@+id/createdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/startcamera"
+        android:text="TextView"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

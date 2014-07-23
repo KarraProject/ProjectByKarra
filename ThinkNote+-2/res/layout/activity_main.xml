@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF9C8"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/search_icon"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Search"
+        android:maxLength="10"
+        android:minWidth="50dp"
+        android:paddingRight="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColorHint="#8A2908"
+        android:textCursorDrawable="@null" />
+
+    <ListView
+        android:id="@+id/noteslist"
+        android:layout_width="match_parent"
+        android:layout_height="589dp"
+        android:background="#FFF9C8"
+        android:divider="#C6B763"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="No Records Found !!" />
+
+</LinearLayout>
